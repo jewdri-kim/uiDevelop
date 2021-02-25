@@ -61,7 +61,7 @@
 <div class="event-name"><span class="text-type">100%당첨</span> 할인 쿠폰 룰렛!</div>
 ```
 
-
+ 
 
 #### 같은 강조의 텍스트 디자인 입힐땐??
 
