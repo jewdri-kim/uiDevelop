@@ -37,30 +37,44 @@
   - [attribute^="value"]
   - [attribute$="value"]
   - [attribute*="value"]
-- 우리가 평소에 많이 쓰는것중 하나 
-
-```css
-input[type="text"],
-input[type="submit"],
-input[type="password"],
-input[type="search"],
-input[type="number"],
-input[type="reset"],
-input[type="email"], input[type="tel"],
-input[type="search"],
-input[type="file"],
-input[type="email"],
-input[type="tel"],
-textarea{width:100%;border:1px solid #ddd;height:50px;box-sizing:border-box;padding:0 19px;font-size:16px;color:$CBlack;letter-spacing:-1px;font-weight:500;font-family:"Roboto","Noto",sans-serif;line-height:50px}
-
-input[type="submit"] {cursor:pointer}
-
-input[readonly]
-```
-
-
 
 ### [attributename^="value"]   ( css3 )
+
+- 우리가 평소에 많이 쓰는것중 하나 
+
+  ```css
+  input[type="text"],
+  input[type="submit"],
+  input[type="password"],
+  input[type="search"],
+  input[type="number"],
+  input[type="reset"],
+  input[type="email"], input[type="tel"],
+  input[type="search"],
+  input[type="file"],
+  input[type="email"],
+  input[type="tel"],
+  textarea{width:100%;border:1px solid #ddd;height:50px;box-sizing:border-box;padding:0 19px;font-size:16px;color:$CBlack;letter-spacing:-1px;font-weight:500;font-family:"Roboto","Noto",sans-serif;line-height:50px}
+  
+  input[type="submit"] {cursor:pointer}
+  
+  input[readonly]
+  ```
+
+- 예시 
+
+```html
+<style>
+  h1[title^="abc"]{} /* → title 속성의 값이 abc로 시작하는 h1 요소를 선택 (문자열 기준, 단어기준 X) */
+</style> 
+ 1) <h1 title="abc xyz"> Lorem </h1>
+ 2) <h1 title="abc-xyz"> Lorem </h1>
+ 3) <h1 title="xyz-abc"> Lorem </h1>
+```
+
+- 1) 선택됨
+- 2)선택됨
+- 3)선택되지 않음
 
 - 우리팀에서 제일 많이 활용하는것 
 - attributename 속성의 값이 value로 시작하는 요소를 선택
