@@ -150,3 +150,199 @@
 
 ##### 2. 버튼예시
 
+![](https://github.com/jewdri-kim/uiDevelop/blob/master/img/button.png)
+
+- 버튼으로 공통잡아보기!!
+
+- btn-type 기본
+- 그 이후 추가된 버전 
+  - v2, v3, v4
+  - btn-type-brd
+  - btn-s btn-m btn-l btn-big, 
+  - btn-type2, btn-type3, btn-type4
+
+- http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/button.html
+
+  - btn-type : 기본스타일잡고 
+  - btn-type, btn-type2, btn-type3 : 크기별
+
+  ```css
+  [class^='btn-type']{
+      display:inline-block;
+      width:300px;
+      height:50px;
+      line-height:50px;
+  }
+  .btn-type2{
+      width:200px;
+      height:30px;
+      line-height:30px;
+  }
+  .btn-type3{
+      width:auto;
+      height:20px;
+      padding:0 10px;
+      line-height:20px;
+  }
+  ```
+
+  - btn-type2, btn-type2-gray, btn-type2-brd, btn-type2-brd2 ...
+
+  ```css
+  .btn-type2{
+      width:200px;
+      height:30px;
+      background:$CBrand;
+      border:1px solid $CBrand;
+      line-height:30px;
+      color:#fff;
+  }
+  .btn-type2-gray{
+      border-color:$CGray2;
+      background-color:$CGray2;
+  }
+  .btn-type2-brd{
+      background:#fff;
+      color:$CBlack;
+      border-color:$CGray4;
+  }
+  .btn-type2-brd2{
+      border-color:#ddd;
+      color:$CBlack;
+  }
+  ```
+
+  
+
+- http://code.d2.co.kr/2020/skt_tplace/guide/button.html
+
+  - btn-type : 기본 / btn-type2: 다른타입 
+  - v2, v3, v4 : 색상, 선색 
+  - btn-s , btn-l : 사이즈 
+
+  ```css
+  
+  [class^='btn-type']{
+  	display:inline-flex;
+  	align-items:center;
+  	justify-content:center;
+  	position:relative;
+  	height:80px;
+  	margin-left:8px;
+  	border-radius:40px;
+  	font-size:24px;
+  	text-align:center;
+  	line-height:80px;
+  	letter-spacing:-0.18px;
+  	color:#fff;
+  	transition:0.5s;
+  	font-family:$fontE,$fontK;
+  	font-weight:400;
+      
+  	&.btn-l{
+  		height:88px;
+  		border-radius:44px;
+  		line-height:88px;
+  	}
+  	&.btn-s{
+  		width:320px;
+  		height:52px;
+  		line-height:52px;
+  		font-size:18px;
+  	}
+  	
+  }
+  ```
+
+  ```css
+  .btn-type{
+  	width:100%;
+  	background:$CPBrand;
+  	&:active{
+  		background:$CPBrandD;
+  	}
+  	&.disabled{
+  		background:#f0f0f0!important;
+  		border-color:#f0f0f0!important;
+  		color:$CGray500!important;;
+  		&:active{
+  			background:#f0f0f0!important;
+  		}
+  		.icon-check{
+  			opacity:0;
+  		}
+  	}
+  	&.v2{
+  		background:#fff;
+  		border:1px solid $CPBrand;
+  		color:$CPBrand;
+  		.icon-check{
+  			opacity:0;
+  		}
+  		&:active{
+  			background:#e8e9f4;
+  		}
+  	}
+  	&.v3{
+  		background:none;
+  		border:1px solid #787878;
+  		color:#505050;
+  		.icon-check{
+  			background-image:url(../images/svg_icon/icon_check_nomal.svg);
+  		}
+  		&:active{
+  			background:#f4f4f4;
+  		}
+  	}
+  	&.v4{
+  		background:#fff;
+  		border:1px solid #bcbcbc;
+  		color:#000;
+  	}
+  }
+  
+  .btn-type2{
+  	width:100%;
+  	height:auto;
+  	line-height:1.7;
+  	font-weight:500;
+  	color:#505050;
+  	&.v2{
+  		font-size:20px;
+  	}
+  }
+  ```
+
+  
+
+3. ##### 타이틀 타입
+
+    http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/text.html
+
+4. ##### 텍스트 타입
+
+   ##### http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/text.html 
+
+   - notice-text
+   - info-text-wrap
+     - http://code.d2.co.kr/2019/ahc/pc/shop/html/member/join_fin.html
+     - http://code.d2.co.kr/2019/ahc/pc/shop/html/etc/error.html
+     - http://code.d2.co.kr/2019/ahc/pc/shop/html/member/login_searchpw_fin.html
+     - http://code.d2.co.kr/2019/ahc/pc/shop/html/cart/order_fin_nomem.html
+
+5. ##### 테이블
+
+   http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/table.html
+
+6. ##### 게시글관련
+
+   http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/board.html
+
+   - http://code.d2.co.kr/2019/ahc/pc/shop/html/event/event_ing_view_01.html
+   - http://code.d2.co.kr/2019/ahc/pc/shop/html/event/event_win_view.html
+   - http://code.d2.co.kr/2019/ahc/pc/shop/html/community/cs_notice_view.html
+
+
+
+
+
