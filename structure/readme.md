@@ -675,6 +675,13 @@ UI.layerPopUp({selId:'#join-result'});
 - But, 다른 폴더의 서브페이지와 겹치면 공통화 하는게 낫지 않을까?
 - 공통 뽑아 내는건, 처음에 가이더의 역할!! 후에는 프로젝트 하면서 서로간의 협업이 중요!
 - 처음 하나의 프로젝트를 만들어 놓으면 그 이후에는 편리해지면서 점점 develop~
+- 예시
+  - 슬라이드
+    - http://code.d2.co.kr/2019/ahc/pc/shop/html/main/main.html
+    - http://code.d2.co.kr/2019/ahc/pc/shop/html/shopping/product_detail.html
+  - 테이블예시
+    - http://code.d2.co.kr/2019/ahc/pc/shop/html/mypage/mypage_wishlist.html
+    - http://code.d2.co.kr/2019/ahc/pc/shop/html/mypage/mypage_review_list_able.html
 
 
 
