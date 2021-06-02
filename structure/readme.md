@@ -263,7 +263,7 @@ http://code.d2.co.kr/2019/ahc/pc/shop/html/guide/layout.html
 ### js 구조
 
 - ui.js 공통으로 쓰이는 메쏘드나 이벤트 (레이아웃관련)
-- var UI 라는 변수안에 다 넣는다 (네임스페이스 기법)
+- var UI 라는 변수안에 다 넣는다
 - 메쏘드는 UI. 으로 접근 ( 개발에서 쓰이는 함수와 겹치지 않게 식별 하기 위함)
 
 ```javascript
